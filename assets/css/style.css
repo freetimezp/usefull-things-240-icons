@@ -9,3 +9,46 @@
 a {
     text-decoration: none;
 }
+
+body {
+    background: #262626;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+}
+
+ul li {
+    text-align: center;
+    width: 33.33%;
+}
+
+ul li a {
+    color: #fff;
+}
+
+ul li a i {
+    font-size: 4em;
+    transition: 0.5s ease;
+}
+
+ul li a .text {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transform: translateY(20px) scale(2);
+}
+
+ul li:hover a i {
+    transform: translateY(-20px) scale(0.5);
+}
+
+ul li:hover .text {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+}
