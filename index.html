@@ -4,41 +4,62 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
+        <title>Animated Theme Effects</title>
     </head>
 
-    <body>
+    <body class="dark">
+        <!-- canvas backgrounds -->
+        <canvas id="rainCanvas"></canvas>
+        <canvas id="skyCanvas"></canvas>
+
+        <!-- gradient overlay -->
+        <div class="background"></div>
+
+        <!-- theme toggle -->
+        <button class="theme-toggle">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
         <ul>
             <li>
-                <div class="icon">
-                    <a href="#">
-                        <i class="fa fa-map-marker"></i>
-                        <div class="text">Address</div>
-                    </a>
-                </div>
+                <a href="#">
+                    <div class="icon-wrap">
+                        <div class="umbrella"></div>
+                        <div class="sunburst"></div>
+
+                        <i class="fa fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">Address</div>
+                </a>
             </li>
             <li>
-                <div class="icon">
-                    <a href="#">
+                <a href="#">
+                    <div class="icon-wrap">
+                        <div class="umbrella"></div>
+                        <div class="sunburst"></div>
+
                         <i class="fa fa-envelope"></i>
-                        <div class="text">Email</div>
-                    </a>
-                </div>
+                    </div>
+                    <div class="text">Email</div>
+                </a>
             </li>
             <li>
-                <div class="icon">
-                    <a href="#">
+                <a href="#">
+                    <div class="icon-wrap">
+                        <div class="umbrella"></div>
+                        <div class="sunburst"></div>
+
                         <i class="fa fa-phone"></i>
-                        <div class="text">Phone</div>
-                    </a>
-                </div>
+                    </div>
+                    <div class="text">Phone</div>
+                </a>
             </li>
         </ul>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
